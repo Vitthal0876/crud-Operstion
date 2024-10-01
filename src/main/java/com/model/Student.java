@@ -1,10 +1,12 @@
 package com.model;
 
+
+
 public class Student {
     private int id;
-    private  String name;
     private String city;
     private double percentage;
+    private String name;
 
     public String getCity() {
         return city;
@@ -24,7 +26,6 @@ public class Student {
     public Student(String city, int id, String name, double percentage) {
         this.city = city;
         this.id = id;
-        this.name = name;
         this.percentage = percentage;
     }
 
@@ -32,15 +33,14 @@ public class Student {
         this.id = id;
     }
 
-    public String getName(String hahhhHabh) {
+    public String getName() {return name;
+    }
+
+    public String setName(String name) {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public double getPercentage(double v) {
+    public double getPercentage(double percentage) {
         return percentage;
     }
 
@@ -49,4 +49,7 @@ public class Student {
     }
 
 
+    public double getPercentage() {
+        return percentage;
+    }
 }
